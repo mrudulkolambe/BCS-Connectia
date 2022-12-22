@@ -94,9 +94,9 @@ export default function Home() {
 
         {/* content */}
 
-        <div className="flex">
+        <div className="flex bg-red">
           <div className="w-1/2">
-            <h1 className="text-white font-bold">Modernize your infrastructure with</h1>
+            <h1 className="text-white font-extrabold text-6xl">Modernize your infrastructure with</h1>
           </div>
           <div className="w-1/2">
             <img src="/secondheader.png" className="h-3/4 w-full" alt="" />

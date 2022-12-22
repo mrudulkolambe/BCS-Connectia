@@ -21,21 +21,21 @@ const SolutionRoutes = ({ show }) => {
 				<div className='text-left '>
 					<h1 className='py-3 border-b-2 border-white font-bold'>SD-Infrastructure Solution</h1>
 					<div className='flex flex-col text-sm'>
-						<Link href="/solution/SD-Infrastructure-Solution/Modern-Infrastructure" className='cursor-pointer py-2'>Modern Infrastructure</Link>
+						<Link href="/solution/SD-Infrastructure-Solution/Modern-Infrastructure" className='cursor-pointer py-2 mt-3'>Modern Infrastructure</Link>
 						<Link href="/solution/SD-Infrastructure-Solution/Enterprise-Backup-Solution" className='cursor-pointer py-2'>Enterprise Backup Solution</Link>
 						<Link href="/solution/SD-Infrastructure-Solution/Backup-Solution-For-SMEs" className='cursor-pointer py-2'>Backup Solution for SMEs</Link>
 						<Link href="/solution/SD-Infrastructure-Solution/Immutable-Storage" className='cursor-pointer py-2'>Immutable Storage</Link>
-						<p className='cursor-pointer py-2'>Next Genereation Network</p>
-						<p className='cursor-pointer py-2'>Cloud Infrastructure</p>
-						<p className='cursor-pointer py-2'>SD-End Computing</p>
-						<p className='cursor-pointer py-2'>Data Center Solution</p>
+						<Link href="/solution/SD-Infrastructure-Solution/Next-Genereation-Network" className='cursor-pointer py-2'>Next Genereation Network</Link>
+						<Link href="/solution/SD-Infrastructure-Solution/Cloud-Infrastructure" className='cursor-pointer py-2'>Cloud Infrastructure</Link>
+						<Link href="/solution/SD-Infrastructure-Solution/SD-End-Computing" className='cursor-pointer py-2'>SD-End Computing</Link>
+						<Link href="/solution/SD-Infrastructure-Solution/Datacenter-Solution" className='cursor-pointer py-2'>Data Center Solution</Link>
 					</div>
 				</div>
 				<div className='text-left '>
 					<h1 className='py-3 border-b-2 border-white font-bold'>SD-Cybersecurity</h1>
 					<div className='flex flex-col text-sm'>
-						<p className='cursor-pointer py-2 mt-3'>VMDR</p>
-						<p className='cursor-pointer py-2'>Next Gen End Point Security</p>
+						<Link href={'/solution/SD-Cybersecurity/VMDR'} className='cursor-pointer py-2 mt-3'>VMDR</Link>
+						<Link href={'/solution/SD-Cybersecurity/Next-Gen-End-Point-Security'} className='cursor-pointer py-2'>Next Gen End Point Security</Link>
 						<p className='cursor-pointer py-2'>SASE</p>
 						<p className='cursor-pointer py-2'>PAM</p>
 						<p className='cursor-pointer py-2'>Next Genereation Firewalls</p>
