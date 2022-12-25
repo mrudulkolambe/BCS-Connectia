@@ -3,19 +3,19 @@ export default function footer() {
     <footer className="p-4 bg-red sm:p-6 dark:bg-gray-900">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
-          <a href="https://flowbite.com/" className="flex items-center">
+          <a href="#" className="flex items-center">
             <img src="/footerLogo.png" className="mr-3 h-8" alt="FlowBite Logo" />
           </a>
           <h2 className="text-white">www.bcs.com</h2>
         </div>
         <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-          <div>
+          <div className="hidden">
             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white text-white">
               Company
             </h2>
             <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
-                <a href="https://flowbite.com/" className="hover:underline">
+                <a href="#" className="hover:underline">
                   Digital Marketing
                 </a>
               </li>
@@ -33,15 +33,15 @@ export default function footer() {
             <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
                 <a
-                  href="https://github.com/themesberg/flowbite"
+                  href="#"
                   className="hover:underline "
                 >
                   Home
                 </a>
               </li>
               <li>
-                <a href="https://discord.gg/4eeurUVvTy" className="hover:underline">
-                  Solution
+                <a href="#" className="hover:underline">
+                  Product
                 </a>
               </li>
             </ul>
@@ -53,12 +53,12 @@ export default function footer() {
             <ul className="text-white dark:text-gray-400">
               <li className="mb-4">
                 <a href="#" className="hover:underline">
-                  Privacy Policy
+                  Our Company
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:underline">
-                  Terms &amp; Conditions
+                  Contact Us
                 </a>
               </li>
             </ul>

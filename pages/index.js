@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import { Pagination, Navigation, Autoplay } from "swiper";
@@ -95,8 +94,8 @@ export default function Home() {
 
         {/* content */}
 
-        <div className="flex bg-red h-[60vh]">
-          <div className="w-1/2 py-10 px-24">
+        <div className="flex bg-red lg:h-[60vh] h-full lg:flex-row flex-col">
+          <div className="lg:w-1/2 w-full py-10 lg:px-24 px-10">
             <h1 className="text-white font-extrabold text-xl">Modernize your infrastructure<br />with</h1>
             <img className="w-2/4 -mt-5 ml-16" src="/nutanix.png" alt="" />
             <ul className="text-white font-semibold text-sm flex flex-col gap-3 mt-12">
@@ -107,12 +106,12 @@ export default function Home() {
             </ul>
             <button className="font-bold border-black border-2 hover:border-white hover:bg-red bg-black text-white px-4 mt-7 duration-300 py-2 rounded-lg">Know More</button>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="lg:w-1/2 w-full h-full">
             <img src="/secondheader.png" className="h-full w-full" alt="" />
           </div>
         </div>
-        <div className="flex bg-white h-[60vh] flex-row-reverse">
-          <div className="w-1/2 py-10 px-24">
+        <div className="flex bg-white lg:h-[60vh] lg:flex-row-reverse h-max flex-col">
+          <div className="lg:w-1/2 w-full py-10 lg:px-24 px-10">
             <h1 className="text-red font-extrabold text-3xl">Next-Gen Security with EDR, XDR & MTR</h1>
             <hr className="my-6 border-black border" />
             <p className="text-black font-semibold text-sm flex flex-col gap-3 mt-12">
@@ -126,7 +125,7 @@ export default function Home() {
               <button className="font-bold border-black border-2 hover:border-white hover:bg-red bg-black text-white px-4 mt-7 duration-300 py-2 rounded-lg">Know More</button>
             </div>
           </div>
-          <div className="w-1/2 h-full">
+          <div className="lg:w-1/2 w-full  h-full">
             <img src="/thirdheader.png" className="h-full w-full" alt="" />
           </div>
         </div>
@@ -168,18 +167,14 @@ export default function Home() {
               <div className="card-content">
                 <img src="data-recovery.png" className="py-5 pl-5" />
                 <Link href={'solution/Business-Continuity-Solution/Recovery-Operation-Center'} className="text-white px-5 pb-5">
-                  SD-Disaster <br />
-                  Recovery Solutions
+                  SD-Disaster Recovery Solutions
                 </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
-                  Backup & Disaster Recovery
-                  <br />
-                  solution with BC Assured 5 <br />
-                  min RTO & RPO
+                  Backup & Disaster Recovery solution with BC Assured 5 min RTO & RPO
                 </p>
                 <p className="text-white py-4 px-5">
-                  Network Automation & <br /> Orchestration solution.
+                  Network Automation & Orchestration solution.
                 </p>
               </div>
             </div>
@@ -189,15 +184,11 @@ export default function Home() {
               <div className="card-content">
                 <img src="backup.png" className="py-5 pl-5 backup" />
                 <Link  href={'/solution/SD-Infrastructure/Backup-Solution-For-SMEs'} className="text-white px-5 pb-5">
-                  Backup Solution
-                  <br />
-                  for SMEs
+                  Backup Solution for SMEs
                 </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
-                  A True SaaS Solution
-                  <br />
-                  Single console tool for the IT managers
+                  A True SaaS Solution Single console tool for the IT managers
                 </p>
                 <p className="text-white py-4 px-5">
                   Local backup is free of cost
@@ -212,13 +203,10 @@ export default function Home() {
                 <Link href={'/solution/SD-Cybersecurity/VMDR'} className="text-white px-5 pb-5">VMDR</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
-                  Automate remediation with
-                  <br />
-                  no-code workflows
+                  Automate remediation with no-code workflows
                 </p>
                 <p className="text-white py-4 px-5">
-                  Quickly remediate threats at <br />
-                  scale with automated patch <br /> management{" "}
+                  Quickly remediate threats at scale with automated patch management{" "}
                 </p>
               </div>
             </div>
@@ -228,20 +216,14 @@ export default function Home() {
               <div className="card-content">
                 <img src="communication.png" className="py-5 pl-5 communication" />
                 <Link href="/solution/Smart-Office-Solution/SD-Unified-Communication" className="text-white px-5 pb-5">
-                  SD-Unified <br />
-                  Communication
+                  SD-Unified Communication
                 </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
-                  Drastically reduce the unified
-                  <br />
-                  communication cost by all-
-                  <br />
-                  in-one 3CX license
+                  Drastically reduce the unified communication cost by all-in-one 3CX license
                 </p>
                 <p className="text-white py-4 px-5">
-                  More than 600,000 <br />
-                  installations globally
+                  More than 600,000 installations globally
                 </p>
               </div>
             </div>
@@ -254,7 +236,7 @@ export default function Home() {
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">Total network visibility</p>
                 <p className="text-white py-4 px-5">
-                  Instant user profiling <br />
+                  Instant user profiling
                 </p>
               </div>
             </div>
@@ -269,8 +251,7 @@ export default function Home() {
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">A True SaaS Solution</p>
                 <p className="text-white py-4 px-5">
-                  Managing BYOD work
-                  <br /> arrangements
+                  Managing BYOD work arrangements
                 </p>
                 <p className="text-white py-4 px-5">
                   Handling IoT-based systems
@@ -285,14 +266,10 @@ export default function Home() {
                 <Link href={'/solution/SD-Cybersecurity/Privileged-Access-Management'} className="text-white px-5 pb-5">PAM</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white py-4 px-5">
-                  Secure privileged access for any
-                  <br /> user from any device
+                  Secure privileged access for any user from any device
                 </p>
                 <p className="text-white py-4 px-5">
-                  Just in time account
-                  <br />
-                  provisioning for temporary <br />
-                  users
+                  Just in time account provisioning for temporary users
                 </p>
               </div>
             </div>
@@ -304,17 +281,13 @@ export default function Home() {
                 <Link href={'solution/Business-Continuity-Solution/Recovery-Operation-Center'} className="text-white px-5 pb-5">Email Security</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white py-4 px-5">
-                  Patented Inline Protection
-                  <br /> via API
+                  Patented Inline Protection via API
                 </p>
                 <p className="text-white py-4 px-5">
-                  300+ AI indicators with a
-                  <br /> catch rate of 99%
+                  300+ AI indicators with a catch rate of 99%
                 </p>
                 <p className="text-white py-4 px-5">
-                  Highest detection rate in the
-                  <br />
-                  industry
+                  Highest detection rate in the industry
                 </p>
               </div>
             </div>
