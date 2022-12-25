@@ -43,7 +43,7 @@ const PG34 = () => {
 			<Layout>
 				<Breadcrumb />
 				<div className='my-5'>
-					<h1 className='text-red lg:text-6xl text-4xl mt-3 lg:mt-0 text-center font-extrabold'>How do you manage your organization's privileges?</h1>
+					<h1 className='text-red lg:text-6xl text-4xl mt-3 lg:mt-0 text-center font-extrabold'>How do you manage your organization&apos;s privileges?</h1>
 					<div className='grid lg:grid-cols-2 grid-cols-1 gap-6 mt-5  m-auto'>
 						<ListContainer data={list_01} />
 						<ListContainer data={list_02} />
