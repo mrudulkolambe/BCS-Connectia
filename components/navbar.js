@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <SolutionRoutes show={show} />
-      <div className="bg-red px-24 py-4 text-sm text-white lg:flex justify-between hidden">
+      <div className="bg-red lg:px-24 px-5 py-4 text-sm text-white lg:flex justify-between hidden">
         <div className="flex gap-x-16">
           <a href={"mailto:support@bcs.com"}>support@bcs.com </a>
           <a href="tel:+1800 200 548">+1800 200 548</a>
@@ -60,7 +60,7 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-      <nav className="relative px-24 py-6 flex justify-between items-center bg-black min-w-screen">
+      <nav className="relative lg:px-24 px-10 py-6 flex justify-between items-center bg-black min-w-screen">
         <Link href="/" className="nav-logo">
           <img src="/logo.png" />
         </Link>
