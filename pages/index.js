@@ -13,6 +13,7 @@ import Footer from "../components/footer";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "swiper/css/autoplay";
+import Link from "next/link";
 
 export default function Home() {
   const [initialRenderComplete, setInitialRenderComplete] = useState(false);
@@ -37,7 +38,7 @@ export default function Home() {
           }}
         >
           <SwiperSlide>
-            <div className="bghome pt-24">
+            <div className="bghome pt-24 select-none">
               <div className="content">
                 <h2 className="text-white bghome-header">
                   Digital <br />
@@ -64,7 +65,7 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bghome pt-24">
+            <div className="bghome pt-24 select-none">
               <div className="content">
                 <h2 className="text-white bghome-header">
                   Digital Transformation <br />
@@ -94,12 +95,39 @@ export default function Home() {
 
         {/* content */}
 
-        <div className="flex bg-red">
-          <div className="w-1/2">
-            <h1 className="text-white font-extrabold text-6xl">Modernize your infrastructure with</h1>
+        <div className="flex bg-red h-[60vh]">
+          <div className="w-1/2 py-10 px-24">
+            <h1 className="text-white font-extrabold text-xl">Modernize your infrastructure<br />with</h1>
+            <img className="w-2/4 -mt-5 ml-16" src="/nutanix.png" alt="" />
+            <ul className="text-white font-semibold text-sm flex flex-col gap-3 mt-12">
+              <div className="flex items-center"><span className="bg-white h-1.5 w-1.5 rounded-full mr-4"></span><li>One single console to manage</li></div>
+              <div className="flex items-center"><span className="bg-white h-1.5 w-1.5 rounded-full mr-4"></span><li>Single Vendor support</li></div>
+              <div className="flex items-center"><span className="bg-white h-1.5 w-1.5 rounded-full mr-4"></span><li>10x more performance</li></div>
+              <div className="flex items-center"><span className="bg-white h-1.5 w-1.5 rounded-full mr-4"></span><li>100% Software-defined</li></div>
+            </ul>
+            <button className="font-bold border-black border-2 hover:border-white hover:bg-red bg-black text-white px-4 mt-7 duration-300 py-2 rounded-lg">Know More</button>
           </div>
-          <div className="w-1/2">
-            <img src="/secondheader.png" className="h-3/4 w-full" alt="" />
+          <div className="w-1/2 h-full">
+            <img src="/secondheader.png" className="h-full w-full" alt="" />
+          </div>
+        </div>
+        <div className="flex bg-white h-[60vh] flex-row-reverse">
+          <div className="w-1/2 py-10 px-24">
+            <h1 className="text-red font-extrabold text-3xl">Next-Gen Security with EDR, XDR & MTR</h1>
+            <hr className="my-6 border-black border" />
+            <p className="text-black font-semibold text-sm flex flex-col gap-3 mt-12">
+              Endpoint Detection and Response (EDR) Automatically detect and prioritize potential threats and quickly see where to focus attention and know which machines may be impacted
+            </p>
+            <div className="flex justify-between items-center">
+              <div className="flex gap-8">
+                <FaArrowLeft />
+                <FaArrowRight />
+              </div>
+              <button className="font-bold border-black border-2 hover:border-white hover:bg-red bg-black text-white px-4 mt-7 duration-300 py-2 rounded-lg">Know More</button>
+            </div>
+          </div>
+          <div className="w-1/2 h-full">
+            <img src="/thirdheader.png" className="h-full w-full" alt="" />
           </div>
         </div>
 
@@ -136,13 +164,13 @@ export default function Home() {
           }}
         >
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="data-recovery.png" className="py-5 pl-5" />
-                <h2 className="text-white px-5 pb-5">
+                <Link href={'solution/Business-Continuity-Solution/Recovery-Operation-Center'} className="text-white px-5 pb-5">
                   SD-Disaster <br />
                   Recovery Solutions
-                </h2>
+                </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
                   Backup & Disaster Recovery
@@ -157,14 +185,14 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="backup.png" className="py-5 pl-5 backup" />
-                <h2 className="text-white px-5 pb-5">
+                <Link  href={'/solution/SD-Infrastructure/Backup-Solution-For-SMEs'} className="text-white px-5 pb-5">
                   Backup Solution
                   <br />
                   for SMEs
-                </h2>
+                </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
                   A True SaaS Solution
@@ -178,10 +206,10 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="data-exchange.png" className="py-5 pl-5 data-exchange" />
-                <h2 className="text-white px-5 pb-5">VMDR</h2>
+                <Link href={'/solution/SD-Cybersecurity/VMDR'} className="text-white px-5 pb-5">VMDR</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
                   Automate remediation with
@@ -196,13 +224,13 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="communication.png" className="py-5 pl-5 communication" />
-                <h2 className="text-white px-5 pb-5">
+                <Link href="/solution/Smart-Office-Solution/SD-Unified-Communication" className="text-white px-5 pb-5">
                   SD-Unified <br />
                   Communication
-                </h2>
+                </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">
                   Drastically reduce the unified
@@ -219,10 +247,10 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="database-storage.png" className="py-5 pl-5 communication" />
-                <h2 className="text-white px-5 pb-5">Immutable Storage</h2>
+                <Link href={"/solution/SD-Infrastructure-Solution/Immutable-Storage"} className="text-white px-5 pb-5">Immutable Storage</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">Total network visibility</p>
                 <p className="text-white py-4 px-5">
@@ -232,14 +260,12 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="backup.png" className="py-5 pl-5 backup" />
-                <h2 className="text-white px-5 pb-5">
-                  Network Access
-                  <br />
-                  Control
-                </h2>
+                <Link href={"/solution/SD-Cybersecurity/Network-Access-Control"} className="text-white px-5 pb-5">
+                  Network Access Control
+                </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white px-5 pt-2">A True SaaS Solution</p>
                 <p className="text-white py-4 px-5">
@@ -253,10 +279,10 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="networking.png" className="py-5 pl-5 networking" />
-                <h2 className="text-white px-5 pb-5">PAM</h2>
+                <Link href={'/solution/SD-Cybersecurity/Privileged-Access-Management'} className="text-white px-5 pb-5">PAM</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white py-4 px-5">
                   Secure privileged access for any
@@ -272,10 +298,10 @@ export default function Home() {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-red card">
+            <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="communication.png" className="py-5 pl-5 communication" />
-                <h2 className="text-white px-5 pb-5">Email Security</h2>
+                <Link href={'solution/Business-Continuity-Solution/Recovery-Operation-Center'} className="text-white px-5 pb-5">Email Security</Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
                 <p className="text-white py-4 px-5">
                   Patented Inline Protection

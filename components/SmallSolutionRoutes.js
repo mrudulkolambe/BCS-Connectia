@@ -29,36 +29,36 @@ const SmallSolutionRoutes = ({ show }) => {
             <Link href="/solution/SD-Infrastructure-Solution/Enterprise-Backup-Solution" className='cursor-pointer py-2'>Enterprise Backup Solution</Link>
             <Link href="/solution/SD-Infrastructure-Solution/Backup-Solution-For-SMEs" className='cursor-pointer py-2'>Backup Solution for SMEs</Link>
             <Link href="/solution/SD-Infrastructure-Solution/Immutable-Storage" className='cursor-pointer py-2'>Immutable Storage</Link>
-            <p className='cursor-pointer py-2'>Next Genereation Network</p>
-            <p className='cursor-pointer py-2'>Cloud Infrastructure</p>
-            <p className='cursor-pointer py-2'>SD-End Computing</p>
-            <p className='cursor-pointer py-2'>Data Center Solution</p>
+            <Link href="/solution/SD-Infrastructure-Solution/Next-Genereation-Network" className='cursor-pointer py-2'>Next Genereation Network</Link>
+            <Link href="/solution/SD-Infrastructure-Solution/Cloud-Infrastructure" className='cursor-pointer py-2'>Cloud Infrastructure</Link>
+            <Link href="/solution/SD-Infrastructure-Solution/SD-End-Computing" className='cursor-pointer py-2'>SD-End Computing</Link>
+            <Link href="/solution/SD-Infrastructure-Solution/Datacenter-Solution" className='cursor-pointer py-2'>Data Center Solution</Link>
           </div>
         </div>
         <div className='text-left '>
           <h1 onClick={() => { setState3(!state3) }} className='py-3 border-b-2 border-white font-bold'>SD-Cybersecurity</h1>
           <div className={state3 ? 'flex flex-col text-sm' : "hidden"}>
-            <p className='cursor-pointer py-2 mt-3'>VMDR</p>
-            <p className='cursor-pointer py-2'>Next Gen End Point Security</p>
-            <p className='cursor-pointer py-2'>SASE</p>
-            <p className='cursor-pointer py-2'>PAM</p>
-            <p className='cursor-pointer py-2'>Next Genereation Firewalls</p>
-            <p className='cursor-pointer py-2'>Email Security</p>
-            <p className='cursor-pointer py-2'>DNS Security</p>
-            <p className='cursor-pointer py-2'>Network Access Control</p>
+            <Link href={'/solution/SD-Cybersecurity/VMDR'} className='cursor-pointer py-2 mt-3'>VMDR</Link>
+            <Link href={'/solution/SD-Cybersecurity/Next-Gen-End-Point-Security'} className='cursor-pointer py-2'>Next Gen End Point Security</Link>
+            <Link href={'/solution/SD-Cybersecurity/SASE'} className='cursor-pointer py-2'>SASE</Link>
+            <Link href={'/solution/SD-Cybersecurity/Privileged-Access-Management'} className='cursor-pointer py-2'>PAM</Link>
+            <Link href={'/solution/SD-Cybersecurity/Next-Generation-Firewall'} className='cursor-pointer py-2'>Next Generation Firewall</Link>
+            <Link href={'/solution/SD-Cybersecurity/Email-Security'} className='cursor-pointer py-2'>Email Security</Link>
+            <Link href={'/solution/SD-Cybersecurity/DNS-Security'} className='cursor-pointer py-2'>DNS Security</Link>
+            <Link href={'/solution/SD-Cybersecurity/Network-Access-Control'} className='cursor-pointer py-2'>Network Access Control</Link>
           </div>
         </div>
         <div className='text-left '>
           <h1 onClick={() => { setState4(!state4) }} className='py-3 border-b-2 border-white font-bold'>Smart Office Solution</h1>
           <div className={state4 ? 'flex flex-col text-sm' : "hidden"}>
-            <p className='cursor-pointer py-2 mt-3'>Smart Meeting Room</p>
-            <p className='cursor-pointer py-2'>SD-Unified Communication</p>
-            <p className='cursor-pointer py-2'>Video Conferencing Solution</p>
-            <p className='cursor-pointer py-2'>Wireless Content Sharing</p>
-            <p className='cursor-pointer py-2'>Meeting Room Booking</p>
-            <p className='cursor-pointer py-2'>IP Telephony Solutions</p>
-            <p className='cursor-pointer py-2'>Next Genereation Office</p>
-            <p className='cursor-pointer py-2'>Digital Storage</p>
+            <Link href={'/solution/Smart-Office-Solution/Smart-Meeting-Room'} className='cursor-pointer py-2 mt-3'>Smart Meeting Room</Link>
+            <Link href={'/solution/Smart-Office-Solution/SD-Unified-Communication'} className='cursor-pointer py-2'>SD-Unified Communication</Link>
+            <Link href={'/solution/Smart-Office-Solution/Video-Conferencing-Solution'} className='cursor-pointer py-2'>Video Conferencing Solution</Link>
+            <Link href={'/solution/Smart-Office-Solution/Wireless-Content-Sharing'} className='cursor-pointer py-2'>Wireless Content Sharing</Link>
+            <Link href={'/solution/Smart-Office-Solution/Meeting-Room-Booking'} className='cursor-pointer py-2'>Meeting Room Booking</Link>
+            <Link href={'/solution/Smart-Office-Solution/IP-Telephony-Solutions'} className='cursor-pointer py-2'>IP Telephony Solutions</Link>
+            <Link href={'/solution/Smart-Office-Solution/Next-Generation-Office'} className='cursor-pointer py-2'>Next Generation Office</Link>
+            <Link href={'/solution/Smart-Office-Solution/Digital-Signage'} className='cursor-pointer py-2'>Digital Signage</Link>
           </div>
         </div>
       </div>
