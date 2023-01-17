@@ -30,7 +30,7 @@ export default function Home() {
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
           loop={true}
-          autoplay={{ delay: 1000 }}
+          autoplay={{ delay: 5000 }}
           pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
