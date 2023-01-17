@@ -29,7 +29,8 @@ export default function Home() {
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={1}
-          //  autoplay={{ delay: 1000 }}
+          loop={true}
+          autoplay={{ delay: 1000 }}
           pagination={{ clickable: true }}
           navigation={{
             nextEl: ".swiper-button-next",
@@ -46,6 +47,32 @@ export default function Home() {
                 <div className="flex mt-10">
                   <div className="slider"></div>
                   <div className="slider slider1"></div>
+                  <div className="slider slider1"></div>
+                </div>
+                <div className="flex mt-20">
+                  <FaArrowLeft
+                    color="white"
+                    size={30}
+                    className="mr-20 swiper-button-prev"
+                  />
+                  <FaArrowRight
+                    color="white"
+                    size={30}
+                    className="swiper-button-next"
+                  />
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bghome pt-24 select-none">
+              <div className="content">
+                <h2 className="text-white bghome-header">
+                  Digital Transformation <br />
+                </h2>
+                <div className="flex mt-10">
+                  <div className="slider slider1"></div>
+                  <div className="slider slider"></div>
                   <div className="slider slider1"></div>
                 </div>
                 <div className="flex mt-20">
@@ -183,7 +210,7 @@ export default function Home() {
             <div className="bg-red card select-none">
               <div className="card-content">
                 <img src="backup.png" className="py-5 pl-5 backup" />
-                <Link  href={'/solution/SD-Infrastructure/Backup-Solution-For-SMEs'} className="text-white px-5 pb-5">
+                <Link href={'/solution/SD-Infrastructure/Backup-Solution-For-SMEs'} className="text-white px-5 pb-5">
                   Backup Solution for SMEs
                 </Link>
                 <hr className=" h-px bg-white border-0 dark:bg-gray-700 w-48 ml-5"></hr>
